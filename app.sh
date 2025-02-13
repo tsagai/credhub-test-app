@@ -1,19 +1,14 @@
 #!/bin/bash
+cat /usr/local/share/ca-certificates/* > ~/ca.crt
 while true; do
     echo "Curl date: $(date)"
     curl 'https://credhub.service.cf.internal:8844/api/v1/interpolate' -i -X POST \
+    --capath ~/ca.crt \
+    --key /etc/cf-instance-credentials/instance.key \
+    --cert /etc/cf-instance-credentials/instance.crt \
     -H 'Content-Type: application/json' \
-    -H 'Authorization: Bearer [some-token]' \
     -d '{
-  "service-name": [
-    {
-      "credentials": {
-        "credhub-ref": "/some-credhub-ref"
-      },
-      "label": "service-name",
-      "other-metadata": "some-other-metadata"
-    }
-  ]
+  "test":"test" 
 }'
     sleep 1
 done
