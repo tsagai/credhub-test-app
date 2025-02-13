@@ -1,0 +1,9 @@
+---
+applications:
+ - name: credhub-test-app
+   memory: 256M
+   instances: 1
+   random-route: true
+   buildpacks: 
+     - binary_buildpack
+   command: ./app.sh
