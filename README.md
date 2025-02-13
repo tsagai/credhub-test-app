@@ -15,5 +15,5 @@ cd credhub-test-app/
 
 3. Deploy application
 ```bash
-cf push
+cf push -u process
 ```
