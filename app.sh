@@ -10,6 +10,5 @@ while true; do
     -d '{
   "test":"test" 
 }'
-    echo "Curl date: $(date)"
     sleep 10
 done
