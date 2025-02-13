@@ -1,6 +1,5 @@
 # credhub-test-app
-Credhub Testing app
-
+Credhub Testing app that sends POST request to the credhub interpolate endpoint (https://credhub.service.cf.internal:8844/api/v1/interpolate) every second as a process.
 
 ## Deployment
 1. Clone this repo:
