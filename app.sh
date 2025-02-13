@@ -1,7 +1,7 @@
 #!/bin/bash
 while true; do
     echo "Curl date: $(date)"
-    curl 'https://example.com/api/v1/interpolate' -i -X POST \
+    curl 'https://credhub.service.cf.internal:8844/api/v1/interpolate' -i -X POST \
     -H 'Content-Type: application/json' \
     -H 'Authorization: Bearer [some-token]' \
     -d '{
