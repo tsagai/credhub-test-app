@@ -10,8 +10,7 @@ while true; do
       "credentials": {
         "credhub-ref": "/some-credhub-ref"
       },
-      "label": "service-name",
-      "other-metadata": "some-other-metadata"
+      "label": "service-name"
     }
   ]
 }'
