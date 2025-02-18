@@ -2,7 +2,7 @@
 cat /usr/local/share/ca-certificates/* > ~/ca.crt
 echo Todays Date: $(date)
 echo CA certs: 
-cat  ~/.ca.crt
+cat  ~/ca.crt
 echo Instance Cert:
 cat /etc/cf-instance-credentials/instance.crt
 
