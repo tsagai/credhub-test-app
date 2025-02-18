@@ -10,5 +10,10 @@ while true; do
     -d '{
   "test":"test" 
 }'
-    sleep 10
+  echo Date: $(date)
+  echo CA certs: 
+  cat  /usr/local/share/ca-certificates
+  echo Instance Cert:
+  cat /etc/cf-instance-credentials/instance.crt
+  sleep 10
 done
